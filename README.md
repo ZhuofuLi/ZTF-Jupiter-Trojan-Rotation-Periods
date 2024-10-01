@@ -40,10 +40,6 @@ The following steps were followed to determine the rotation periods of Jupiter T
 ## Data Sources and Acknowledgements
 The light curves were derived from photometric observations obtained by the Zwicky Transient Facility (ZTF). This work contributes to understanding the rotational characteristics and physical properties of Jupiter Trojans, offering insights into their formation and the dynamics of the early solar system.
 
-### References
-- Bellm et al., 2019, [PASP, 131, 018002](https://doi.org/10.1088/1538-3873/aaecbe)
-- Warner et al., 2009, [Icarus, 202, 134](https://doi.org/10.1016/j.icarus.2007.02.023)
-
 ## Future Work
 These findings set the stage for further analysis using data from the upcoming Vera C. Rubin Observatory's Legacy Survey of Space and Time (LSST), which will enable more detailed and statistically significant studies of Jupiter Trojans and their rotational properties.
 
@@ -53,4 +49,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ## Contact
-For any questions or comments, please contact the repository owner, Zhuofu (Chester) Li, at zhuofuli@uw.edu.
+For any questions or comments, please contact the repository owner, Zhuofu (Chester) Li, at zhuofu@uw.edu.
