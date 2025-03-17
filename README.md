@@ -1,33 +1,44 @@
-# **Estimates of Rotation Periods for Jupiter Trojans with the Zwicky Transient Facility Photometric Light Curves**
+# **Estimates of Jupiter Trojan Rotation Periods with Zwicky Transient Facility Lightcurves**
 
 ## **Overview**  
 This repository provides a comprehensive analysis of the rotation periods for **216 Jupiter Trojans** using photometric observations from the **Zwicky Transient Facility (ZTF)**. The analysis focuses on the determination of rotation periods, reliability flags, and additional parameters such as diameters and amplitude variations.  
 
-**Note:** Due to the large file size, lightcurve plots are not included in this repository but can be provided upon request.
+**Note:** Due to the large file size, light curve plots are not included in this repository but can be provided upon request.
 
 ---
 
 ## **Repository Structure**  
 
-- **/tables**  
-  Contains the summary table (`Summary_Table.csv`), providing key details on the analyzed Jupiter Trojans, including rotation periods, reliability flags, amplitudes, and diameters.
+- **`Summary_Table.csv`**  
+  Provides key details on the analyzed Jupiter Trojans, including rotation periods, reliability flags, amplitudes, and diameters.
 
 ---
 
 ## **Summary Table (Summary_Table.csv)**  
-The summary table provides critical data for each Trojan, including:
+The summary table provides detailed data for each Jupiter Trojan, with the following columns:
 
 - **Designation**: Unique identifier for each Jupiter Trojan.  
-- **Best Period [hours]**: The rotation period determined from lightcurve analysis.  
-- **Manual Period [hours]**: Period determined through manual verification.  
-- **Reliability Flag**: Indicates the reliability of the period determination (1 = low, 3 = high).  
-- **Total Observations**: Number of photometric data points used in the analysis.  
-- **Amplitude**: Lightcurve amplitude, representing brightness variation.  
-- **Diameter [km]**: Estimated diameter of the Trojan.
+- **LCDB_Period [hours]**: Previously known rotation period from the Asteroid Lightcurve Database (LCDB), if available.  
+- **Best_Period [hours]**: Rotation period determined through Lomb-Scargle periodogram analysis.  
+- **Manual_Overwrite**: Period determined through manual inspection, if applicable.  
+- **Reliability_Flag**: Value indicating the reliability of the period determination (1 = low, 3 = high).  
+- **Comments**: Additional notes, including uncertainties or peculiarities observed during the analysis.  
+- **#Minima**: Number of minima detected in the light curve, indicating possible rotation profiles.  
+- **Chi2_g**: Chi-squared statistic for the fit of the g-band photometric data.  
+- **Chi2_r**: Chi-squared statistic for the fit of the r-band photometric data.  
+- **Avg_Chi2**: Average of the chi-squared values from g and r bands.  
+- **N_obs_g**: Number of photometric observations in the g-band.  
+- **N_obs_r**: Number of photometric observations in the r-band.  
+- **Amplitude**: Measured amplitude of the light curve, representing brightness variation.  
+- **Peak_Period**: Peak period identified in the Lomb-Scargle periodogram.  
+- **Half_Period**: Half of the identified peak period, used to confirm double-peaked light curves.  
+- **Twice_Period**: Twice the identified peak period, used to explore potential rotational harmonics.  
+- **Diameter**: Estimated diameter of the Jupiter Trojan.  
+- **Diameter_Unit**: Unit for the diameter measurement (typically in kilometers).
 
 ---
 
-## **Lightcurve Plots (Available Upon Request)**  
+## **Light Curve Plots (Available Upon Request)**  
 Although the plots are not included due to file size constraints, they can be provided upon request. Each plot includes:
 
 - **Panel A**: Corrected light curve for ZTF g and r band data.  
@@ -57,6 +68,23 @@ If you wish to access these plots, please contact the repository owner directly.
 
 ## **Data Sources and Acknowledgements**  
 Photometric data were sourced from the **Zwicky Transient Facility (ZTF)**. This research contributes to understanding the rotational properties and physical characteristics of Jupiter Trojans, offering insights into their formation and the dynamical history of the early Solar System.
+
+---
+
+## **Future Work**  
+These findings lay the groundwork for future analyses using data from the **Vera C. Rubin Observatory's Legacy Survey of Space and Time (LSST)**. LSST's deeper imaging and higher temporal cadence will enable the identification of rotational periods for smaller Trojans (down to ~1 km), refining our understanding of their spin barrier and density distributions.
+
+---
+
+## **How to Cite**  
+If you use this dataset in your research, please cite it as:  
+
+TBD
+
+---
+
+## **License**  
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ---
 
